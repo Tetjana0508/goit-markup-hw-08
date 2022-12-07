@@ -1,0 +1,26 @@
+body {
+  font-family: "Roboto", sans-serif;
+  /*background-color: var(--primary-bg-color);*/
+  color: var(--title-text-color);
+}
+
+.logo,
+.header__nav,
+.header__contacts,
+.features__list,
+.specialty__list,
+.user-list,
+.buttons,
+.filter {
+  list-style: none;
+}
+
+.logo,
+.link {
+  text-decoration: none;
+}
+
+.header__nav .link,
+.buttons .button {
+  color: var(--primary-text-color);
+}

@@ -1,0 +1,23 @@
+/*основний колір тексту #212121; */
+/*колір тексту заголовка #757575; */
+/*акцент #2196F3; */
+/* колір h1, лого в футері та адреси #FFFFFF; */
+/*колір телефону та ел.адреси в футері rgba(255, 255, 255, 0.6);*/
+/*логотип #000000;*/
+/*колір основного фону #F5F5F5;*/
+/*вторинний колір фону #F5F4FA;*/
+/*колір шапки та футера #2F303A;*/
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --subject-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #F5F4FA;
+  --nav-bg-color: #2f303a;
+}
