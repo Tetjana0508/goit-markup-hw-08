@@ -1,5 +1,8 @@
 .specialty__container {
   padding-bottom: 95px;
+  @media screen and (max-width:1199px) {
+      display: none;
+    }
 }
 
 .specialty__list {

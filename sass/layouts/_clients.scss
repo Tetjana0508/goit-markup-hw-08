@@ -21,9 +21,6 @@
 .clients__list {  
   width: 100%;
   gap: 30px;
-  // &:last-child {
-  //   gap: 0;
-  // }
     
   @media screen and (max-width:767px) {
       display: flex;
