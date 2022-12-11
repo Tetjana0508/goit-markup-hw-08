@@ -460,6 +460,7 @@ body {
   fill: var(--accent-color);
 }
 
+/*......................Мобільне меню.................................*/
 .header__mobile-menu {
   position: fixed;
   width: 100vw;
