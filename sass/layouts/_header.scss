@@ -33,8 +33,6 @@
 }
 
 .header__menu-open {
-  // position: absolute;
-  // margin-left: auto;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -115,3 +113,13 @@
 // .header__contacts-icon {
 //   margin-right: 10px;
 // }
+
+.header__mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--subject-color);
+  top: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
