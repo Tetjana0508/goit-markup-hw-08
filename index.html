@@ -29,7 +29,7 @@
           <a href="" class="logo header__logo" lang="en"
             >Web<span class="header__logo-studio">Studio</span></a
           >
-          <button type="button" class="header__menu-open">
+          <button type="button" class="header__menu-open" data-modal-open>
             <svg width="40" height="40">
               <use href="./images/icons.svg#icon-menu-open"></use>
             </svg>
@@ -74,8 +74,8 @@
         </ul>         -->
       </div>
       <!--Мобільне меню-->
-      <div class="container header__mobile-menu">
-        <button type="button" class="header__menu-close">
+      <div class="container header__mobile-menu backdrop is-hidden" data-modal>
+        <button type="button" class="header__menu-close" data-modal-close>
           <svg class="header__mobile-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu-close"></use>
           </svg>
@@ -114,11 +114,19 @@
           </li>
         </ul>
         <div class="header__mobile-socials">
-          <ul class="header__mobile-list">
-            <li class="header__mobile-socials-item">Instagram</li>
-            <li class="header__mobile-socials-item">Twitter</li>
-            <li class="header__mobile-socials-item">Facebook</li>
-            <li class="header__mobile-socials-item">LinkedIn</li>
+          <ul class="header__mobile-socials-list">
+            <li class="header__mobile-socials-item">
+              <a href="" class="link header__mobile-socials-link">Instagram</a>
+            </li>
+            <li class="header__mobile-socials-item">
+              <a href="" class="link header__mobile-socials-link">Twitter</a>
+            </li>
+            <li class="header__mobile-socials-item">
+              <a href="" class="link header__mobile-socials-link">Facebook</a>
+            </li>
+            <li class="header__mobile-socials-item">
+              <a href="" class="link header__mobile-socials-link">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -641,6 +649,6 @@
     </div> -->
 
     <!--script_js-->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
