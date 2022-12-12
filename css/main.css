@@ -399,113 +399,21 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.header__container {
-  background-color: var(--subject-color);
-  border-bottom: 1px solid #ECECEC;
-}
-
-.header__navigation {
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.header__logo-studio {
-  color: var(--logo-color);
-}
-
-.header__menu-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid transparent;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: transparent;
-  cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__menu-open:hover {
-  fill: var(--accent-color);
-}
-
 /*......................Мобільне меню.................................*/
+/*......................Мобільне меню/TEST.................................*/
 .header__mobile-menu {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--subject-color);
-  top: 0;
-  margin-right: auto;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.header__mobile-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  padding: 48px 40px;
+  position: relative;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 .header__menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
   border: 1px solid transparent;
   background: transparent;
   cursor: pointer;
@@ -517,7 +425,14 @@ body {
 }
 
 .header__mobile-navigation {
-  gap: 32px;
+  margin-bottom: 302px;
+}
+
+.header__mobile-item {
+  margin-bottom: 32px;
+}
+.header__mobile-item:last-child {
+  margin-bottom: 0;
 }
 
 .header__mobile-link {
@@ -530,13 +445,41 @@ body {
 }
 
 .header__mobile-contacts {
-  position: relative;
+  text-decoration: none;
+  margin-bottom: 64px;
+}
+
+.header__mobile-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.header__mobile-tel .header__mobile-contacts-link {
+  color: var(--accent-color);
+}
+
+.header__mobile-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1667;
+  letter-spacing: 0.02em;
+}
+
+.header__mobile-email .header__mobile-contacts-link {
+  color: var(--title-text-color);
+}
+
+.header__mobile-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+.mobile-socials-item {
+  margin-left: 20px;
 }
 
 .hero__container {
