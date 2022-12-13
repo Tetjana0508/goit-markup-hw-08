@@ -29,7 +29,7 @@
           <a href="" class="logo header__logo" lang="en"
             >Web<span class="header__logo-studio">Studio</span></a
           >
-          <button type="button" class="header__menu-open" data-modal-open>
+          <button type="button" class="header__menu-open" data-menu-open>
             <svg width="40" height="40">
               <use href="./images/icons.svg#icon-menu-open"></use>
             </svg>
@@ -73,68 +73,78 @@
           </li>
         </ul>         -->
       </div>
-      <!--Мобільне меню-->
-      <div class="container header__mobile-menu backdrop is-hidden" data-modal>
-        <button type="button" class="header__menu-close" data-modal-close>
-          <svg class="header__mobile-icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu-close"></use>
-          </svg>
-        </button>
-        <div class="header__mobile-navigation">
-          <ul class="header__mobile-nav">
-            <li class="header__mobile-item">
-              <a href="./index.html" class="link header__mobile-link current"
-                >Студія</a
+      <!--Мобільне меню--> 
+      <div class="header__mobile-menu backdrop is-hidden" data-menu>
+        <div class="container">
+          <div class="header__mobile-menu-top">
+          <button type="button" class="header__menu-close" data-menu-close>
+            <svg class="header__mobile-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="header__mobile-navigation">
+            <!-- header__mobile-nav -->
+            <ul class="menu-list">
+              <li class="header__mobile-item">
+                <a href="./index.html" class="link header__mobile-link current"
+                  >Студія</a
+                >
+              </li>
+              <li class="header__mobile-item">
+                <a href="./portfolio.html" class="link header__mobile-link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header__mobile-item">
+                <a href="" class="link header__mobile-link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__mobile-menu-bottom">
+          <ul class="header__mobile-contacts">
+            <li class="header__mobile-tel">
+              <a
+                href="tel:+380961111111"
+                class="link header__mobile-contacts-link"
+                >+38 096 111 11 11</a
               >
             </li>
-            <li class="header__mobile-item">
-              <a href="./portfolio.html" class="link header__mobile-link"
-                >Портфоліо</a
+            <li class="header__mobile-email">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link header__mobile-contacts-link"
+                >info@devstudio.com</a
               >
             </li>
-            <li class="header__mobile-item">
-              <a href="" class="link header__mobile-link">Контакти</a>
-            </li>
           </ul>
+          <div class="header__mobile-socials">
+            <ul class="header__mobile-socials-list">
+              <li class="header__mobile-socials-item">
+                <a href="" class="link header__mobile-socials-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="header__mobile-socials-item">
+                <a href="" class="link header__mobile-socials-link">Twitter</a>
+              </li>
+              <li class="header__mobile-socials-item">
+                <a href="" class="link header__mobile-socials-link">Facebook</a>
+              </li>
+              <li class="header__mobile-socials-item">
+                <a href="" class="link header__mobile-socials-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="header__mobile-contacts">
-          <li class="header__mobile-tel">
-            <a
-              href="tel:+380961111111"
-              class="link header__mobile-contacts-link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="header__mobile-email">
-            <a
-              href="mailto:info@devstudio.com"
-              class="link header__mobile-contacts-link"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <div class="header__mobile-socials">
-          <ul class="header__mobile-socials-list">
-            <li class="header__mobile-socials-item">
-              <a href="" class="link header__mobile-socials-link">Instagram</a>
-            </li>
-            <li class="header__mobile-socials-item">
-              <a href="" class="link header__mobile-socials-link">Twitter</a>
-            </li>
-            <li class="header__mobile-socials-item">
-              <a href="" class="link header__mobile-socials-link">Facebook</a>
-            </li>
-            <li class="header__mobile-socials-item">
-              <a href="" class="link header__mobile-socials-link">LinkedIn</a>
-            </li>
-          </ul>
         </div>
+        
       </div>
     </header>
 
     <main>
       <!--Шапка/Hero-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <div class="hero__wrap">
             <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
@@ -143,10 +153,10 @@
           </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--<h2>Особливості</h2>-->
-      <!-- <section class="features features__block">
+      <section class="features features__block">
         <div class="container features__container">
           <ul class="features__list">
             <li class="features__item">
@@ -198,7 +208,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Чим ми займаємося-->
       <!-- <section class="specialty">
@@ -650,5 +660,6 @@
 
     <!--script_js-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
