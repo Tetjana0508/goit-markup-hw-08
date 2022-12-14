@@ -155,7 +155,7 @@
   .footer__input:focus+&,
   .footer__input:hover+&,
   .footer__input:not(:placeholder-shown)+& {
-    transform: translateX(-100%);
+    transform: translateY(-175%);
     color: var(--accent-color);
   }
   @include desktop {
@@ -165,6 +165,12 @@
     left: 0;
     padding-left: 16px;
     font-size: 16px;
+    .footer__input:focus+&,
+    .footer__input:hover+&,
+    .footer__input:not(:placeholder-shown)+& {
+      transform: translateX(-100%);
+      color: var(--accent-color);
+    }
   }
 }
 
