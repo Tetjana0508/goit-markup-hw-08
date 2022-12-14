@@ -11,12 +11,24 @@
   text-align: center;
   gap: 70px;
   @include tablet {
-    display: flex;
-  }  
+    display: inline-block;
+  }
+    @include desktop {
+      display: flex;
+    }
+}
+
+.footer__container-tablet {
+  display: flex;
+  justify-content: space-around;
+  // width: 100%;
 }
 
 .footer__navigation {
   margin-bottom: 60px;
+  @include tablet {
+    // margin-right: 165px;
+  }
   @include desktop {
     width: 231px;
   }
