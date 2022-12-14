@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   display: block;
   justify-content: center;
-  @media screen and (min-width:1200px) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -15,10 +15,10 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media screen and (min-width:768px) {
+    @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width:1200px) {
+    @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -35,11 +35,11 @@
 
 .features__list {
   gap: 30px;
-  @media screen and (min-width:768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width:1200px) {
+    @include desktop {
     display: flex;
   }
 }

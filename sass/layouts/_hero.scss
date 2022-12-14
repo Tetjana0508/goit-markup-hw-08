@@ -4,14 +4,9 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  @mixin mobile {
-    // max-width: 100%;
-  }
 }
 
 .hero__wrap {
-  // display: flex;
-  // justify-content: center;
   padding: 118px 60px;
   background-image: var(--background-image-color), url(../images/hero-480-1x.jpg);
   background-repeat: no-repeat;

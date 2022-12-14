@@ -5,14 +5,14 @@
   width: 100%;
   justify-content: center;
 
-  @media screen and (min-width:1200px) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .clients__heading {
-  @media screen and (max-width:1200px) {
+  @include desktop {
     font-size: 28px;
     line-height: 1.1786;
   }
@@ -27,12 +27,12 @@
       flex-wrap: wrap;
     }
 
-  @media screen and (min-width:768px) {
+    @include tablet {
     display: flex;
     flex-wrap: wrap;
   }
   
-  @media screen and (min-width:1200px) {
+    @include desktop {
     display: flex;
     align-items: center;    
   }
@@ -43,10 +43,10 @@
     width: calc((100% - 30px) / 2);
   }
   
-  @media screen and (min-width:768px) {
+    @include tablet {
     width: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width:1200px) {
+    @include desktop {
     width: calc((100% - 150px) / 6);
   }
 }
