@@ -1,4 +1,6 @@
-.backdrop {
+
+
+.backdrop-modal {
   position: fixed;
   top: 0;
   width: 100%;
@@ -7,9 +9,10 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
+
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 450px;
   background: var(--subject-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -21,6 +24,10 @@
   padding: 40px;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
+  }
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -80,6 +87,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  @media screen and (max-width:1199px) {
+    width: 370px;
+  }
 }
 
 .modal__form-input {
@@ -135,6 +145,9 @@
     border-color: var(--accent-color);
     color: var(--logo-color);
   }
+  @media screen and (max-width:1199px) {
+    width: 370px;
+  }
 }
 
 .modal__form-input:not(:focus):not(:placeholder-shown):valid {
@@ -149,18 +162,25 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
+  @include desktop {
+    align-items: center;
+  }
 }
 
 .modal__text {
-  font-size: 14px;
-  line-height: 1.7123px;
+  font-size: 12px;
+  line-height: 1.1667px;
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   position: relative;
   height: 24px;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.7123px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .visually-hidden {
@@ -201,15 +221,17 @@
   color: var(--accent-color);
 }
 
-.modal__button {
+.modal__form .modal__button {
+  width: 370px;
   display: flex;
   justify-content: center;
+  @include desktop {
+    width: 450px;
+    justify-content: center;
+  }
 }
 
 .modal__button-form {
-  display: block;
-  align-items: center;
-  justify-content: center;
   font-family: inherit;
   padding: 10px 52px;
   background-color: var(--accent-color);
