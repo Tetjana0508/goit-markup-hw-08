@@ -12,7 +12,7 @@
 }
 
 .clients__heading {
-  @include desktop {
+  @media screen and (max-width:1199px) {
     font-size: 28px;
     line-height: 1.1786;
   }

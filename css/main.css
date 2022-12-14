@@ -1184,7 +1184,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .clients__heading {
     font-size: 28px;
     line-height: 1.1786;
