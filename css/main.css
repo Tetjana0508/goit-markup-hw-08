@@ -1505,6 +1505,12 @@ body {
 .footer__input:focus, .footer__input:hover, .footer__input:not(:placeholder-shown) {
   border-color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .footer__input {
+    display: inline-block;
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__input {
     display: -webkit-box;
@@ -1542,6 +1548,11 @@ body {
   -webkit-transform: translateY(-175%);
           transform: translateY(-175%);
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .footer__label {
+    left: 165px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__label {

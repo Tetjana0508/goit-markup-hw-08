@@ -151,6 +151,11 @@
   &:not(:placeholder-shown) {
     border-color: var(--accent-color);
   }
+
+  @include tablet {
+    display: inline-block;
+    width: 450px;
+  }
   @include desktop {
     display: flex;
     align-items: center;
@@ -173,6 +178,9 @@
   .footer__input:not(:placeholder-shown)+& {
     transform: translateY(-175%);
     color: var(--accent-color);
+  }
+  @include tablet {
+    left: 165px;
   }
   @include desktop {
     position: absolute;
