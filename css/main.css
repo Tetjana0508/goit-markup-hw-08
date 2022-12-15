@@ -1329,11 +1329,6 @@ body {
   text-align: center;
   gap: 70px;
 }
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: inline-block;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;

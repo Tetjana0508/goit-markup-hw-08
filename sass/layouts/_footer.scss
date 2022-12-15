@@ -10,9 +10,6 @@
   align-items: center;
   text-align: center;
   gap: 70px;
-  @include tablet {
-    display: inline-block;
-  }
     @include desktop {
       display: flex;
       align-items: flex-start;
