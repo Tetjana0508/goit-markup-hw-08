@@ -834,7 +834,6 @@ body {
 }
 
 .hero__container {
-  max-width: 100%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,6 +841,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    margin: 0 auto;
+  }
 }
 
 .hero__wrap {
@@ -850,7 +855,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__wrap {
@@ -861,7 +865,6 @@ body {
   .hero__wrap {
     background-image: var(--background-image-color), url(../images/hero-768-1x.jpg);
     padding: 118px 204px;
-    max-width: 720px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -872,9 +875,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__wrap {
     background-image: var(--background-image-color), url(../images/hero-1200-1x.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 100%;
+    padding: 200px 452px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -890,12 +892,24 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--subject-color);
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    width: 696px;
     font-size: 44px;
     line-height: 1.3636;
+  }
+}
+
+.hero__title h1 {
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title h1 {
+    width: 696px;
   }
 }
 

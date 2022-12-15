@@ -1,9 +1,13 @@
 .hero__container {
-  max-width: 100%;
-  // margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: center;
+  max-width: none;
+  @include desktop {
+    // max-width: auto;
+    margin: 0 auto;
+    
+  }
 }
 
 .hero__wrap {
@@ -12,7 +16,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
+  // max-width: 100%;
   @include retina {
       background-image: var(--background-image-color), url(../images/hero-480-2x.jpg);
   }
@@ -20,17 +24,15 @@
   @include tablet {
     background-image: var(--background-image-color), url(../images/hero-768-1x.jpg);
     padding: 118px 204px;
-    max-width: 720px;
     @include retina {
-        background-image: var(--background-image-color), url(../images/hero-768-2x.jpg);
-      }
+      background-image: var(--background-image-color), url(../images/hero-768-2x.jpg);
+    }
   }
   
   @include desktop {
     background-image: var(--background-image-color), url(../images/hero-1200-1x.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 100%;
+    padding: 200px 452px;
+    background-size: cover;
     @include retina {
         background-image: var(--background-image-color), url(../images/hero-1200-2x.jpg);
       }
@@ -44,11 +46,20 @@
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--subject-color);
-  // margin: 0 auto;
+  margin: 0 auto;
   margin-bottom: 30px;
-  @media screen and (min-width:1200px) {
+  width: 360px;
+  @include desktop {
+    width: 696px;
     font-size: 44px;
     line-height: 1.3636;
+  }
+}
+
+.hero__title h1 {
+  width: 360px;
+  @include desktop {
+    width: 696px;
   }
 }
 
