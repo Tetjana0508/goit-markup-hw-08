@@ -11,15 +11,16 @@
 
 .features__item {
   width: 100%;
-  margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
   }
     @include tablet {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
     @include desktop {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -34,14 +35,9 @@
 }
 
 .features__list {
-  gap: 30px;
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-  }
-    @include desktop {
-    display: flex;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; 
 }
 
 .features__text {
@@ -49,7 +45,6 @@
   line-height: 1.7143;
   letter-spacing: 0.03em;
   display: flex;
-  // gap: 30px;
 }
 
 .features__column {

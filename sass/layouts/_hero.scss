@@ -32,7 +32,7 @@
   @include desktop {
     background-image: var(--background-image-color), url(../images/hero-1200-1x.jpg);
     padding: 200px 452px;
-    background-size: cover;
+    // background-size: cover;
     @include retina {
         background-image: var(--background-image-color), url(../images/hero-1200-2x.jpg);
       }

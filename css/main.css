@@ -876,7 +876,6 @@ body {
   .hero__wrap {
     background-image: var(--background-image-color), url(../images/hero-1200-1x.jpg);
     padding: 200px 452px;
-    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -955,7 +954,6 @@ body {
 
 .features__item {
   width: 100%;
-  margin-bottom: 30px;
 }
 .features__item:last-child {
   margin-bottom: 0;
@@ -963,11 +961,13 @@ body {
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -982,23 +982,12 @@ body {
 }
 
 .features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
-}
-@media screen and (min-width: 768px) {
-  .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .features__text {
