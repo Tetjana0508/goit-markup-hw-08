@@ -976,9 +976,15 @@ body {
   font-size: 14px;
   line-height: 1.1429;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .features .features__title {
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__list {

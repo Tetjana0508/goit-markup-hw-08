@@ -29,9 +29,13 @@
   font-size: 14px;
   line-height: 1.1429;
   letter-spacing: 0.03em;
+  text-align: center;
   .features & {
     color: var(--primary-text-color);
   }
+    @include tablet {
+      text-align: left;
+    }
 }
 
 .features__list {
