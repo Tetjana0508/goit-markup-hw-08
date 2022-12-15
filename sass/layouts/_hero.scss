@@ -1,29 +1,30 @@
 .hero__container {
   padding: 0;
-  display: flex;
-  justify-content: center;
-  max-width: none;
+  // display: flex;
+  // justify-content: center;
+  max-width: 100%;
   @include desktop {
-    // max-width: auto;
     margin: 0 auto;
-    
   }
 }
 
 .hero__wrap {
-  padding: 118px 60px;
+  // padding: 118px 60px;
+  max-width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: var(--background-image-color), url(../images/hero-480-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // max-width: 100%;
   @include retina {
       background-image: var(--background-image-color), url(../images/hero-480-2x.jpg);
   }
 
   @include tablet {
     background-image: var(--background-image-color), url(../images/hero-768-1x.jpg);
-    padding: 118px 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     @include retina {
       background-image: var(--background-image-color), url(../images/hero-768-2x.jpg);
     }
@@ -31,8 +32,8 @@
   
   @include desktop {
     background-image: var(--background-image-color), url(../images/hero-1200-1x.jpg);
-    padding: 200px 452px;
-    // background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
     @include retina {
         background-image: var(--background-image-color), url(../images/hero-1200-2x.jpg);
       }

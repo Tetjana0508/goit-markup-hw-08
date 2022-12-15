@@ -545,7 +545,7 @@ body {
 .header__nav .current {
   color: var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__nav {
     margin-left: 93px;
   }
@@ -670,6 +670,8 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    font-size: 12px;
+    line-height: 1.1667;
   }
 }
 
@@ -835,13 +837,7 @@ body {
 
 .hero__container {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: none;
+  max-width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
@@ -850,7 +846,9 @@ body {
 }
 
 .hero__wrap {
-  padding: 118px 60px;
+  max-width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: var(--background-image-color), url(../images/hero-480-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -864,7 +862,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero__wrap {
     background-image: var(--background-image-color), url(../images/hero-768-1x.jpg);
-    padding: 118px 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -875,7 +874,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__wrap {
     background-image: var(--background-image-color), url(../images/hero-1200-1x.jpg);
-    padding: 200px 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -1077,6 +1077,15 @@ body {
   .user__section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    margin-bottom: 50px;
   }
 }
 

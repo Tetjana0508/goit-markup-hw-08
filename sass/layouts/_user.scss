@@ -12,6 +12,13 @@
   }
 }
 
+.heading {
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
 .user__heading {
   @media screen and (max-width:1200px) {
     font-size: 28px;
